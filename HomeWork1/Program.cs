@@ -14,10 +14,14 @@
     
 // }
 // else{
+    // if (b > a){
 //     Console.Write("max = ");
 //     Console.WriteLine(b);
 //     Console.Write("min = ");
 //     Console.Write(a);
+    // else{
+    //     Console.WriteLine(a = b)
+    // }
 // }
 
 
@@ -64,10 +68,7 @@
 
 // while (a <= n){
 //     if (a % 2 == 0){
-//     Console.Write(a+" ");
+//         Console.Write(a+" ");
+//     }
 //     a++;
-//     }
-//     else{
-//         a++;
-//     }
-// }
+// };
