@@ -21,17 +21,17 @@
 // }
 
 
-//Task15
+// //Task15
 
-Console.WriteLine("Введите день недели: ");
-int day = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите день недели: ");
+// int day = Convert.ToInt32(Console.ReadLine());
 
-if (day >= 1 && day <= 5){
-    System.Console.WriteLine("Рабочий день недели.");
-}
-else if (day == 6 || day == 7){
-    System.Console.WriteLine("Выходной день недели.");
-}
-else{
-    System.Console.WriteLine("Такого дня недели нет.");
-}
+// if (day >= 1 && day <= 5){
+//     System.Console.WriteLine("Рабочий день недели.");
+// }
+// else if (day == 6 || day == 7){
+//     System.Console.WriteLine("Выходной день недели.");
+// }
+// else{
+//     System.Console.WriteLine("Такого дня недели нет.");
+// }
