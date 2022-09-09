@@ -5,6 +5,9 @@
 // int result =  n % 100 / 10;
 
 // System.Console.WriteLine($"{n} -> {result}");
+////////System.Console.WriteLine(n / 10 % 10);
+
+
 
 
 // //Task13
@@ -13,7 +16,7 @@
 // int a = Convert.ToInt32(Console.ReadLine());
 // int b = a % 1000 / 100;
 // if (a > 99){
-  
+
 //     System.Console.WriteLine($"{a} -> {b}");
 // }
 // else{
