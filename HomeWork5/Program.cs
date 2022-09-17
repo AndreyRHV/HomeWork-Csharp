@@ -78,27 +78,27 @@
 /// [3 7 22 2 78] -> 76
 
 
-int[] GenerateArray(int length) {
-    var array = new double[length];
+float[] GenerateArray(int length) {
+    var array = new float[length];
     var random = new Random();
 
     for (var i = 0; i < array.Length; i++) {
-        array[i] = random.NextDouble(0, 10);
+        array[i] = random.NextSingle() * 10;
     }
 
     return array;
 }
 
-void PrintArray(int[] array) {
+void PrintArray(float[] array) {
     for (var i = 0; i < array.Length - 1; i++) {
         Console.Write(array[i] + " ");
     }
     Console.WriteLine(array[array.Length - 1]);
 }
 
-int diffMaxMinNumbers(int[] array) {
-    int max = array[0];
-    int min = array[0];
+float diffMaxMinNumbers(float[] array) {
+    float max = array[0];
+    float min = array[0];
     
     for (int i = 0; i < array.Length; i++) {
        if (array[i] > max) 
@@ -113,4 +113,4 @@ int diffMaxMinNumbers(int[] array) {
 
 var array = GenerateArray(4);
 PrintArray(array);
-diffMaxMinNumbers(array);
+Console.WriteLine(diffMaxMinNumbers(array));
