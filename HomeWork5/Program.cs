@@ -74,43 +74,43 @@
 
 
 
-/// Task 38 Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-/// [3 7 22 2 78] -> 76
+// /// Task 38 Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// /// [3 7 22 2 78] -> 76
 
 
-float[] GenerateArray(int length) {
-    var array = new float[length];
-    var random = new Random();
+// float[] GenerateArray(int length) {
+//     var array = new float[length];
+//     var random = new Random();
 
-    for (var i = 0; i < array.Length; i++) {
-        array[i] = random.NextSingle() * 10;
-    }
+//     for (var i = 0; i < array.Length; i++) {
+//         array[i] = random.NextSingle() * 10;
+//     }
 
-    return array;
-}
+//     return array;
+// }
 
-void PrintArray(float[] array) {
-    for (var i = 0; i < array.Length - 1; i++) {
-        Console.Write(array[i] + " ");
-    }
-    Console.WriteLine(array[array.Length - 1]);
-}
+// void PrintArray(float[] array) {
+//     for (var i = 0; i < array.Length - 1; i++) {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine(array[array.Length - 1]);
+// }
 
-float diffMaxMinNumbers(float[] array) {
-    float max = array[0];
-    float min = array[0];
+// float diffMaxMinNumbers(float[] array) {
+//     float max = array[0];
+//     float min = array[0];
     
-    for (int i = 0; i < array.Length; i++) {
-       if (array[i] > max) 
-       max = array[i];
-       else {
-        min = array[i];
-       }
+//     for (int i = 0; i < array.Length; i++) {
+//        if (array[i] > max) 
+//        max = array[i];
+//        else {
+//         min = array[i];
+//        }
        
-    }
-    return array.Max() - array.Min();
-}
+//     }
+//     return array.Max() - array.Min();
+// }
 
-var array = GenerateArray(4);
-PrintArray(array);
-Console.WriteLine(diffMaxMinNumbers(array));
+// var array = GenerateArray(4);
+// PrintArray(array);
+// Console.WriteLine(diffMaxMinNumbers(array));
