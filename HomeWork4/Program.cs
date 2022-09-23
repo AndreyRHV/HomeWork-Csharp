@@ -1,21 +1,21 @@
 ﻿// /// Task 25 Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
 
-// Console.Write("Введите число a: ");
-// int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число a: ");
+int a = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write("Введите число b: ");
-// int b = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число b: ");
+int b = Convert.ToInt32(Console.ReadLine());
 
-// int Exponentiation(int numberA, int numberB){
-//   int res = 1;
-//   for(int i=1; i <= numberB; i++){
-//     res = res * numberA;
-//   }
+int Exponentiation(int numberA, int numberB){
+  int res = 1;
+  for(int i=1; i <= numberB; i++){
+    res = res * numberA;
+  }
     
-//     return res;
-// }
-// System.Console.WriteLine(Exponentiation(a, b));
+  return res;
+}
+System.Console.WriteLine(Exponentiation(a, b));
 
 
 // Console.Write("Введите число a: ");

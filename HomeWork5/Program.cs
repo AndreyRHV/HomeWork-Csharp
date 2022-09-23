@@ -114,3 +114,32 @@
 // var array = GenerateArray(4);
 // PrintArray(array);
 // Console.WriteLine(diffMaxMinNumbers(array));
+
+System.Console.WriteLine("b1: ");
+double b1 = Convert.ToDouble(Console.ReadLine());
+
+System.Console.WriteLine("k1: ");
+double k1 = Convert.ToDouble(Console.ReadLine());
+
+System.Console.WriteLine("b2: ");
+double b2 = Convert.ToDouble(Console.ReadLine());
+
+System.Console.WriteLine("k2: ");
+double k2 = Convert.ToDouble(Console.ReadLine());
+
+
+double IntersectionPoint(double b1, double k1, double b2, double k2){
+   double x = (b2 -b1) / (k2 - k1);
+   double y = k1 * x + b1;
+    
+    if (k1 == k2 && b1 == b2)
+    System.Console.WriteLine("pryamie sovpadaut");
+
+    else if (k1 == k2){
+    System.Console.WriteLine("pryamie");
+    
+    return 0;
+    }
+}
+
+System.Console.WriteLine(IntersectionPoint);
