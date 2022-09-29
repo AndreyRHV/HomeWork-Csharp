@@ -203,43 +203,63 @@
 
 
 
-int[,,] GenerateArray(int axisX, int axisY, int axisZ, int minRnd, int maxRnd)
-{
-    int[,,] array = new int[axisX, axisY, axisZ];
-    Random rnd = new Random();
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            for (int k = 0; k < array.GetLength(2); k++)
-            {
-                array[i, j, k] = rnd.Next(minRnd, maxRnd);
-            }
-            
-        }
-    }
-    return array;
-}
+// int[,,] GenerateArray(int axisX, int axisY, int axisZ, int minRnd, int maxRnd)
+// {
+//     int[,,] array = new int[axisX, axisY, axisZ];
+//     Random rnd = new Random();
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             int k = 0;
+//             while ( k < array.GetLength(2))
+//             {
+//                 int number = new Random().Next(minRnd, maxRnd);
+//                 if (FindNumber(array, number));
 
-void PrintCoordinatesNumbers(int[,,] matrix)
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            for (int k = 0; k < matrix.GetLength(2); k++)
-            {
-               System.Console.Write($"{matrix[i, j, k]}({i}, {j}, {k})\t"); 
-            }
-            
-        }
-        System.Console.WriteLine();
-    }
-    System.Console.WriteLine();
-}
+//                 array[i, j, k] = number;
+//                 k++;
+//             }
 
-int[,,] newArray = GenerateArray(2, 2, 2, 10, 100);
-PrintCoordinatesNumbers(newArray);
+//         }
+//     }
+//     return array;
+// }
+
+// bool FindNumber(int[,,] array, int number)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < array.GetLength(2); k++)
+//             {
+//                 if (array[i, j, k] == number) return true;
+//             }
+//         }
+//     }
+//     return false;
+// }
+
+// void PrintCoordinatesNumbers(int[,,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < matrix.GetLength(2); k++)
+//             {
+//                System.Console.Write($"{matrix[i, j, k]}({i}, {j}, {k})\t"); 
+//             }
+
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+// }
+
+// int[,,] newArray = GenerateArray(2, 2, 2, 10, 100);
+// PrintCoordinatesNumbers(newArray);
 
 /// Task 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 /// Например, на выходе получается вот такой массив:
@@ -247,3 +267,42 @@ PrintCoordinatesNumbers(newArray);
 /// 12 13 14 05
 /// 11 16 15 06
 /// 10 09 08 07
+
+
+
+// void FillArraySpiral(int[,] array, int number)
+// {
+   
+//     int i = 0, j = 0;
+//     int value = 1;
+//     while (value <= number * number)
+//     {
+//         array[i, j] = value;
+//         if (i <= j + 1 && i + j < number - 1)
+//             ++j;
+//         else if (i < j && i + j >= number - 1)
+//             ++i;
+//         else if (i >= j && i + j > number - 1)
+//             --j;
+//         else
+//             --i;
+//         ++value;
+//     }
+// }
+
+// void PrintArrayMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             System.Console.Write($"{matrix[i, j]}\t");
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+// }
+// int number = 4;
+// int[,] SpiralArray = new int[number, number];
+// FillArraySpiral(SpiralArray, number);
+// PrintArrayMatrix(SpiralArray);
